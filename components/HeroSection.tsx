@@ -62,7 +62,7 @@ export default function HeroSection() {
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <div className="w-3 h-3 bg-[#fd733f] rounded-full mr-2"></div>
-                  <span className="text-3xl lg:text-4xl font-bold text-slate-900 font-architecture">230+</span>
+                  <span className="text-3xl lg:text-4xl font-bold text-slate-900 font-architecture">65+</span>
                 </div>
                 <p className="text-slate-600 font-medium text-sm lg:text-base font-architecture">Ventes réussies</p>
               </div>

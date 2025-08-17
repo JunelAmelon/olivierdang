@@ -19,7 +19,7 @@ export default function ContactSection() {
                 </h2>
                 
                 <p className="text-lg text-slate-600 leading-relaxed font-architecture">
-                  Notre méthode unique <strong>immobilier + travaux</strong> a permis à plus de 230 propriétaires 
+                  Notre méthode unique <strong>immobilier + travaux</strong> a permis à plus de 65 propriétaires 
                   de vendre rapidement et d'augmenter la valeur de leur bien de +15 à +30% en moyenne.
                 </p>
               </div>

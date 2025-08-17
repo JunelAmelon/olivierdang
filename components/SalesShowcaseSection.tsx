@@ -51,7 +51,7 @@ export default function SalesShowcaseSection() {
       id: 4,
       image: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       title: "Duplex avec terrasse - Levallois-Perret",
-      location: "Levallois-Perret, 92300",
+      location: "Levallois-Perret, 9650",
       originalPrice: 680000,
       finalPrice: 795000,
       increase: 16.9,
@@ -204,7 +204,7 @@ export default function SalesShowcaseSection() {
         <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-[#7384bc] font-architecture">230+</div>
+              <div className="text-3xl font-bold text-[#7384bc] font-architecture">65+</div>
               <div className="text-slate-600 font-architecture">Biens vendus</div>
             </div>
             <div>

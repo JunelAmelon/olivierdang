@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
             <span className="text-slate-900">nos clients nous font confiance !</span>
           </h2>
           <p className="text-lg text-slate-600 mt-6 max-w-2xl mx-auto font-architecture">
-            Plus de 230 propriétaires ont vendu rapidement et au meilleur prix grâce à notre expertise unique immobilier + travaux.
+            Plus de 65 propriétaires ont vendu rapidement et au meilleur prix grâce à notre expertise unique immobilier + travaux.
           </p>
         </div>
 

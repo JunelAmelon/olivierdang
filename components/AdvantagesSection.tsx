@@ -60,7 +60,7 @@ export default function AdvantagesSection() {
           <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-slate-600 text-lg leading-relaxed font-architecture">
-                Découvrez pourquoi plus de 230 propriétaires nous ont fait confiance pour vendre leur bien immobilier.
+                Découvrez pourquoi plus de 65 propriétaires nous ont fait confiance pour vendre leur bien immobilier.
               </p>
               
               <h2 className="text-4xl sm:text-5xl font-bold leading-tight font-architecture">
