@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Olivier DANG - Expert Immobilier Paris | Vente Rapide & Valorisation',
-  description: 'Vendez votre bien immobilier 3x plus vite avec notre expertise unique immobilier + travaux. Estimation gratuite, vente en 8-15 jours, +18% de plus-value moyenne. 230+ clients satisfaits.',
+  description: 'Vendez votre bien immobilier 3x plus vite avec notre expertise unique immobilier + travaux. Estimation gratuite, vente en 8-15 jours, +18% de plus-value moyenne. 65+ clients satisfaits.',
 };
 
 export default function Home() {

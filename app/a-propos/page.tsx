@@ -5,7 +5,7 @@ import { Check, Award, Users, TrendingUp, Shield, Heart } from 'lucide-react';
 
 export const metadata = {
   title: 'À Propos - Olivier DANG Expert Immobilier | 10+ Ans d\'Expérience',
-  description: 'Découvrez le parcours d\'Olivier DANG, expert immobilier depuis 10+ ans. 230+ ventes réussies, double expertise immobilier & travaux, 99% de clients satisfaits.',
+  description: 'Découvrez le parcours d\'Olivier DANG, expert immobilier depuis 10+ ans. 65+ ventes réussies, double expertise immobilier & travaux, 99% de clients satisfaits.',
 };
 
 export default function APropos() {
@@ -82,7 +82,7 @@ export default function APropos() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4 font-architecture">10+ années d'expérience</h3>
               <p className="text-slate-600 font-architecture">
-                Plus de 230 ventes réussies et des milliers de clients satisfaits. Une expertise reconnue dans la région parisienne.
+                Plus de 65 ventes réussies et des milliers de clients satisfaits. Une expertise reconnue dans la région parisienne.
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function APropos() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold mb-4 font-architecture">230+</div>
+              <div className="text-5xl font-bold mb-4 font-architecture">65+</div>
               <div className="text-xl opacity-90 font-architecture">Biens vendus</div>
             </div>
             <div className="text-center">
