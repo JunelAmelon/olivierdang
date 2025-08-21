@@ -71,7 +71,7 @@ export default function APropos() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full">
-                  <span className="text-[#7384bc] font-semibold text-sm font-architecture">✨ Notre histoire</span>
+                  <span className="text-[#7384bc] font-semibold text-sm font-architecture"> Notre histoire</span>
                 </div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight font-architecture">
                   <span className="text-slate-900">À propos</span><br />

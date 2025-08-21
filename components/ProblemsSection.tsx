@@ -11,7 +11,7 @@ export default function ProblemsSection() {
       icon: Clock,
       title: "Délais interminables",
       description: "Votre bien reste des mois sur le marché sans offre concrète.",
-      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=200&fit=crop&auto=format",
+      image: "https://plus.unsplash.com/premium_photo-1725075086442-6b30876522ca?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "#7384bc",
       bgColor: "from-blue-50 to-indigo-50"
     },

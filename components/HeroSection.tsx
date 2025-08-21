@@ -85,7 +85,7 @@ export default function HeroSection() {
               {/* Badge animé */}
               <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#7384bc] to-[#fd733f] rounded-full shadow-lg animate-bounce">
                 <span className="text-white font-semibold text-sm font-architecture">
-                  ✨ #1 Expert Immobilier Paris
+                  Expert Immobilier Paris
                 </span>
               </div>
 

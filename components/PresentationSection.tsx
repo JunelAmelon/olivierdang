@@ -73,7 +73,7 @@ export default function PresentationSection() {
         {/* En-tête avec badge */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#7384bc] to-[#fd733f] rounded-full mb-6">
-            <span className="text-white font-semibold text-sm font-architecture">✨ VOTRE EXPERT IMMOBILIER</span>
+            <span className="text-white font-semibold text-sm font-architecture"> VOTRE EXPERT IMMOBILIER</span>
           </div>
           
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight font-architecture mb-8">
