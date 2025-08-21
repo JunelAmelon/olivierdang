@@ -58,6 +58,12 @@ export default function Header() {
               <div className={`w-4 h-0.5 bg-slate-400 transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2 w-8' : ''}`}></div>
             </button>
           </div>
+          <Link 
+              href="/contact" 
+              className="ml-4 px-6 py-3 bg-gradient-to-r from-[#fd733f] to-[#e5652e] text-white font-bold rounded-xl transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 font-architecture"
+           >
+              Estimation gratuite
+          </Link>
         </div>
 
         {/* Menu Mobile */}

@@ -51,7 +51,7 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
   const calculateEstimation = () => {
     // Simulation d'estimation basée sur les données
     let basePrice = 0;
-    
+
     // Prix de base selon le type
     switch (formData.propertyType) {
       case 'appartement':
@@ -72,13 +72,13 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
 
     // Ajustements selon la localisation
     const locationMultiplier = formData.location.toLowerCase().includes('paris') ? 1.4 :
-                              formData.location.toLowerCase().includes('neuilly') ? 1.3 :
-                              formData.location.toLowerCase().includes('boulogne') ? 1.2 : 1.0;
+      formData.location.toLowerCase().includes('neuilly') ? 1.3 :
+      formData.location.toLowerCase().includes('boulogne') ? 1.2 : 1.0;
 
     // Ajustements selon l'état
     const conditionMultiplier = formData.condition === 'excellent' ? 1.15 :
-                               formData.condition === 'bon' ? 1.0 :
-                               formData.condition === 'travaux' ? 0.85 : 1.0;
+      formData.condition === 'bon' ? 1.0 :
+      formData.condition === 'travaux' ? 0.85 : 1.0;
 
     // Bonus pour les équipements
     let bonusMultiplier = 1.0;
@@ -89,7 +89,7 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
 
     const surface = parseInt(formData.surface) || 0;
     const estimatedPrice = Math.round(basePrice * surface * locationMultiplier * conditionMultiplier * bonusMultiplier);
-    
+
     setEstimation(estimatedPrice);
     setStep(4);
   };
@@ -131,6 +131,24 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
     setEstimation(null);
   };
 
+  // 👇 Fonction pour rediriger vers le formulaire de contact
+  const handleTakeAppointment = () => {
+    // Stocker les données d'estimation dans localStorage pour les pré-remplir dans le formulaire de contact
+    if (estimation) {
+      localStorage.setItem('estimationData', JSON.stringify({
+        ...formData,
+        estimation,
+        timestamp: new Date().toISOString()
+      }));
+    }
+    
+    // Fermer le popup
+    onClose();
+    
+    // Rediriger vers la page de contact
+    window.location.href = '/contact';
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -157,7 +175,7 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
         {/* Progress Bar */}
         <div className="px-6 py-4">
           <div className="w-full bg-gray-200 rounded-full h-2">
-            <div 
+            <div
               className="bg-[#7384bc] h-2 rounded-full transition-all duration-300"
               style={{ width: `${(step / 4) * 100}%` }}
             ></div>
@@ -389,7 +407,6 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
                     placeholder="Votre nom et prénom"
                   />
                 </div>
-
                 <div>
                   <label className="block text-sm font-semibold text-slate-900 mb-2 font-architecture">
                     Email *
@@ -402,7 +419,6 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
                     placeholder="votre@email.com"
                   />
                 </div>
-
                 <div>
                   <label className="block text-sm font-semibold text-slate-900 mb-2 font-architecture">
                     Téléphone *
@@ -415,10 +431,9 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
                     placeholder="06 12 34 56 78"
                   />
                 </div>
-
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-sm text-slate-600 font-architecture">
-                    <strong>Confidentialité garantie :</strong> Vos données sont protégées et ne seront jamais partagées. 
+                    <strong>Confidentialité garantie :</strong> Vos données sont protégées et ne seront jamais partagées.
                     Nous vous contacterons uniquement pour votre estimation immobilière.
                   </p>
                 </div>
@@ -499,7 +514,7 @@ export default function EstimationPopup({ isOpen, onClose }: EstimationPopupProp
                   Nouvelle estimation
                 </button>
                 <button
-                  onClick={onClose}
+                  onClick={handleTakeAppointment}
                   className="flex-1 px-6 py-3 bg-[#fd733f] text-white rounded-lg hover:bg-[#e5652e] transition-colors font-architecture flex items-center justify-center"
                 >
                   Prendre rendez-vous
