@@ -53,12 +53,23 @@ const config: Config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        chart: {
-          '1': 'hsl(var(--chart-1))',
-          '2': 'hsl(var(--chart-2))',
-          '3': 'hsl(var(--chart-3))',
-          '4': 'hsl(var(--chart-4))',
-          '5': 'hsl(var(--chart-5))',
+        
+        // PALETTE AXIMOTRAVO
+        aximotravo: {
+          red: {
+            DEFAULT: 'hsl(var(--aximotravo-red))',
+            dark: 'hsl(var(--aximotravo-red-dark))',
+            light: 'hsl(var(--aximotravo-red-light))',
+          },
+          blue: {
+            DEFAULT: 'hsl(var(--aximotravo-blue))',
+            dark: 'hsl(var(--aximotravo-blue-dark))',
+            light: 'hsl(var(--aximotravo-blue-light))',
+          },
+          yellow: {
+            DEFAULT: 'hsl(var(--aximotravo-yellow))',
+            dark: 'hsl(var(--aximotravo-yellow-dark))',
+          },
         },
       },
       keyframes: {
@@ -87,4 +98,5 @@ const config: Config = {
   },
   plugins: [require('tailwindcss-animate')],
 };
+
 export default config;

@@ -1,5 +1,4 @@
 'use client';
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EstimationPopup from '@/components/EstimationPopup';
@@ -16,8 +15,8 @@ export default function Services() {
       title: "Estimation immobilière gratuite",
       description: "Une évaluation précise et honnête de votre bien basée sur l'analyse du marché local et notre expertise de plus de 10 ans.",
       features: ["Visite gratuite sous 48h", "Rapport détaillé avec photos", "Conseils personnalisés", "Sans engagement"],
-      color: "text-[#7384bc]",
-      bgColor: "bg-[#7384bc]/10",
+      color: "text-aximotravo-red",
+      bgColor: "bg-aximotravo-red/10",
       number: "01",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop&auto=format&q=80"
     },
@@ -26,8 +25,8 @@ export default function Services() {
       title: "Valorisation par les travaux",
       description: "Nous identifions les travaux stratégiques qui maximiseront la valeur de votre bien avant la vente pour un ROI optimal.",
       features: ["Audit complet du bien", "Devis travaux inclus", "Coordination artisans", "ROI garanti +15%"],
-      color: "text-[#fd733f]",
-      bgColor: "bg-[#fd733f]/10",
+      color: "text-aximotravo-blue",
+      bgColor: "bg-aximotravo-blue/10",
       number: "02",
       image: "https://images.unsplash.com/photo-1585128792020-803d29415281?w=500&h=300&fit=crop&auto=format&q=80"
     },
@@ -36,8 +35,8 @@ export default function Services() {
       title: "Vente rapide et optimisée",
       description: "Notre méthode éprouvée permet de vendre 3x plus vite que la moyenne du marché grâce à notre stratégie digitale.",
       features: ["Marketing digital avancé", "Home staging professionnel", "Visites qualifiées uniquement", "Négociation experte"],
-      color: "text-green-600",
-      bgColor: "bg-green-600/10",
+      color: "text-aximotravo-yellow",
+      bgColor: "bg-aximotravo-yellow/10",
       number: "03",
       image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&h=300&fit=crop&auto=format&q=80"
     },
@@ -46,8 +45,8 @@ export default function Services() {
       title: "Accompagnement complet",
       description: "Un suivi personnalisé de A à Z, de l'estimation jusqu'à la signature chez le notaire avec un interlocuteur unique.",
       features: ["Interlocuteur unique dédié", "Suivi hebdomadaire détaillé", "Gestion administrative complète", "Support 7j/7"],
-      color: "text-purple-600",
-      bgColor: "bg-purple-600/10",
+      color: "text-aximotravo-red",
+      bgColor: "bg-aximotravo-red/10",
       number: "04",
       image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=500&h=300&fit=crop&auto=format&q=80"
     }
@@ -69,7 +68,6 @@ export default function Services() {
 
     const serviceElements = document.querySelectorAll('.service-item');
     serviceElements.forEach(service => observer.observe(service));
-
     return () => observer.disconnect();
   }, []);
 
@@ -77,26 +75,24 @@ export default function Services() {
     <>
       <main className="min-h-screen">
         <Header />
-        
+
         {/* Hero Section amélioré */}
-        <section className="bg-gradient-to-br from-white via-blue-50 to-purple-50 py-16 lg:py-32 relative overflow-hidden">
+        <section className="bg-gradient-to-br from-white via-red-50 to-blue-50 py-16 lg:py-32 relative overflow-hidden">
           {/* Éléments décoratifs */}
-          <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-r from-[#7384bc]/20 to-blue-200/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-gradient-to-r from-[#fd733f]/20 to-purple-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-r from-aximotravo-red/20 to-aximotravo-blue/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-10 w-80 h-80 bg-gradient-to-r from-aximotravo-blue/20 to-aximotravo-yellow/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16 lg:mb-20">
-              <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-[#7384bc]/10 to-blue-50 rounded-full mb-6 sm:mb-8">
-                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-[#7384bc] mr-2" />
-                <span className="text-sm sm:text-base text-[#7384bc] font-semibold font-architecture">NOS SERVICES D'EXCELLENCE</span>
+              <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-aximotravo-red/10 to-aximotravo-blue/10 rounded-full mb-6 sm:mb-8">
+                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-aximotravo-red mr-2" />
+                <span className="text-sm sm:text-base text-aximotravo-blue font-semibold font-architecture">NOS SERVICES D'EXCELLENCE</span>
               </div>
-              
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight font-architecture mb-6 sm:mb-8">
                 <span className="text-slate-900">Une expertise</span><br />
-                <span className="bg-gradient-to-r from-[#7384bc] to-blue-600 bg-clip-text text-transparent">sur-mesure</span><br />
+                <span className="bg-gradient-to-r from-aximotravo-red to-aximotravo-blue bg-clip-text text-transparent">sur-mesure</span><br />
                 <span className="text-slate-900">pour votre réussite</span>
               </h1>
-              
               <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto font-architecture px-4">
                 Notre expertise unique <strong className="text-slate-900">immobilier + travaux</strong> vous garantit une vente rapide et au meilleur prix.
                 Découvrez nos 4 piliers de réussite qui ont convaincu plus de 65 propriétaires.
@@ -112,10 +108,10 @@ export default function Services() {
               {services.map((service, index) => {
                 const isVisible = visibleServices.includes(index);
                 const isEven = index % 2 === 0;
-                
+
                 return (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     data-index={index}
                     className={`service-item relative transition-all duration-700 ${
                       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -125,7 +121,6 @@ export default function Services() {
                     <div className={`grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ${
                       isEven ? '' : 'lg:grid-flow-col-dense'
                     }`}>
-                      
                       {/* Image */}
                       <div className={`relative group ${isEven ? '' : 'lg:col-start-2'}`}>
                         <div className="relative overflow-hidden rounded-2xl shadow-2xl">
@@ -134,13 +129,12 @@ export default function Services() {
                             alt={service.title}
                             className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110"
                           />
-                          
                           {/* Overlay subtil */}
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
                           
                           {/* Badge numéro */}
                           <div className="absolute top-6 left-6">
-                            <div className={`w-16 h-16 bg-white/95 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300`}>
+                            <div className="w-16 h-16 bg-white/95 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                               <span className={`text-2xl font-bold ${service.color} font-architecture`}>
                                 {service.number}
                               </span>
@@ -173,8 +167,8 @@ export default function Services() {
                             Ce qui est inclus :
                           </h4>
                           {service.features.map((feature, idx) => (
-                            <div 
-                              key={idx} 
+                            <div
+                              key={idx}
                               className="flex items-start space-x-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group"
                             >
                               <CheckCircle className={`w-6 h-6 ${service.color} flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform`} />
@@ -185,9 +179,9 @@ export default function Services() {
 
                         {/* CTA */}
                         <div className="pt-4">
-                          <a 
-                            href="/contact" 
-                            className={`inline-flex items-center px-6 py-3 bg-gradient-to-r from-slate-900 to-slate-700 text-white rounded-xl hover:from-slate-800 hover:to-slate-600 transition-all duration-300 font-architecture group shadow-lg hover:shadow-xl transform hover:-translate-y-1`}
+                          <a
+                            href="/contact"
+                            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-slate-900 to-slate-700 text-white rounded-xl hover:from-slate-800 hover:to-slate-600 transition-all duration-300 font-architecture group shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                           >
                             <span>Découvrir ce service</span>
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -202,13 +196,13 @@ export default function Services() {
           </div>
         </section>
 
-        {/* Processus en 4 étapes - Design moderne */}
+        {/* Processus en 4 étapes - SUPPRESSION DU VERT */}
         <section className="bg-white py-16 lg:py-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 lg:mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-architecture mb-4 lg:mb-6">
                 <span className="text-slate-900">Notre processus</span>{' '}
-                <span className="bg-gradient-to-r from-[#7384bc] to-blue-600 bg-clip-text text-transparent">éprouvé</span>
+                <span className="bg-gradient-to-r from-aximotravo-red to-aximotravo-blue bg-clip-text text-transparent">éprouvé</span>
               </h2>
               <p className="text-base lg:text-lg text-slate-600 max-w-3xl mx-auto font-architecture">
                 Une méthode rodée en 4 étapes pour maximiser vos résultats
@@ -222,28 +216,28 @@ export default function Services() {
                   title: "Estimation & Audit",
                   description: "Évaluation précise de votre bien et identification des opportunités de valorisation.",
                   icon: Target,
-                  color: "bg-[#7384bc]"
+                  color: "bg-aximotravo-red"
                 },
                 {
                   step: "2",
                   title: "Travaux de valorisation",
                   description: "Réalisation des travaux stratégiques pour maximiser l'attractivité et le prix de vente.",
                   icon: Wrench,
-                  color: "bg-[#fd733f]"
+                  color: "bg-aximotravo-blue"
                 },
                 {
                   step: "3",
                   title: "Marketing & Vente",
                   description: "Mise en marché optimisée avec home staging, photos pro et campagne digitale ciblée.",
                   icon: Zap,
-                  color: "bg-green-500"
+                  color: "bg-aximotravo-yellow"
                 },
                 {
                   step: "4",
                   title: "Accompagnement final",
                   description: "Négociation experte et suivi jusqu'à la signature définitive chez le notaire.",
                   icon: Award,
-                  color: "bg-purple-500"
+                  color: "bg-aximotravo-red"
                 }
               ].map((process, index) => (
                 <div key={index} className="relative group">
@@ -253,7 +247,7 @@ export default function Services() {
                     </div>
                     <div className="text-center">
                       <div className="text-xs lg:text-sm font-bold text-slate-400 mb-2 font-architecture">ÉTAPE {process.step}</div>
-                      <h3 className="text-lg lg:text-xl font-bold text-slate-900 mb-3 lg:mb-4 font-architecture group-hover:text-[#7384bc] transition-colors">
+                      <h3 className="text-lg lg:text-xl font-bold text-slate-900 mb-3 lg:mb-4 font-architecture group-hover:text-aximotravo-red transition-colors">
                         {process.title}
                       </h3>
                       <p className="text-sm lg:text-base text-slate-600 leading-relaxed font-architecture">
@@ -266,7 +260,7 @@ export default function Services() {
                   {index < 3 && (
                     <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                       <div className="w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
-                        <ArrowRight className="w-5 h-5 text-[#7384bc]" />
+                        <ArrowRight className="w-5 h-5 text-aximotravo-red" />
                       </div>
                     </div>
                   )}
@@ -279,13 +273,13 @@ export default function Services() {
         {/* CTA Section avec design premium */}
         <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 lg:py-32 text-white relative overflow-hidden">
           {/* Formes décoratives */}
-          <div className="absolute top-0 right-0 w-64 h-64 lg:w-96 lg:h-96 bg-gradient-to-br from-[#7384bc]/20 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 lg:w-96 lg:h-96 bg-gradient-to-tr from-[#fd733f]/20 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 lg:w-96 lg:h-96 bg-gradient-to-br from-aximotravo-red/20 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 lg:w-96 lg:h-96 bg-gradient-to-tr from-aximotravo-blue/20 to-transparent rounded-full blur-3xl"></div>
           
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight font-architecture mb-6 lg:mb-8">
               Prêt à maximiser la valeur<br />
-              <span className="bg-gradient-to-r from-[#7384bc] to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-aximotravo-yellow to-aximotravo-red bg-clip-text text-transparent">
                 de votre bien ?
               </span>
             </h2>
@@ -296,7 +290,7 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center">
               <button
                 onClick={() => setIsEstimationOpen(true)}
-                className="group px-8 lg:px-10 py-4 lg:py-5 bg-gradient-to-r from-[#fd733f] to-orange-500 text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-1 font-architecture flex items-center justify-center"
+                className="group px-8 lg:px-10 py-4 lg:py-5 bg-gradient-to-r from-aximotravo-red to-aximotravo-red-dark text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-aximotravo-red/25 transform hover:-translate-y-1 font-architecture flex items-center justify-center"
               >
                 <span>Estimation gratuite</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -330,7 +324,7 @@ export default function Services() {
 
         <Footer />
       </main>
-      
+
       <EstimationPopup
         isOpen={isEstimationOpen}
         onClose={() => setIsEstimationOpen(false)}

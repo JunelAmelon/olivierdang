@@ -16,7 +16,7 @@ export default function PolitiqueConfidentialite() {
           <div className="mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight font-architecture mb-6">
               <span className="text-slate-900">Politique de</span>{' '}
-              <span className="text-[#7384bc]">confidentialité</span>
+              <span className="text-aximotravo-yellow">confidentialité</span>
             </h1>
             <p className="text-lg text-slate-600 font-architecture">
               Comment nous collectons, utilisons et protégeons vos données personnelles
@@ -41,7 +41,7 @@ export default function PolitiqueConfidentialite() {
                   Nous collectons les données personnelles suivantes :
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-gray-50 p-6 rounded-xl">
+                  <div className="bg-red-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Données d'identification</h3>
                     <ul className="space-y-2 text-slate-600 font-architecture">
                       <li>• Nom et prénom</li>
@@ -50,7 +50,7 @@ export default function PolitiqueConfidentialite() {
                       <li>• Adresse postale</li>
                     </ul>
                   </div>
-                  <div className="bg-gray-50 p-6 rounded-xl">
+                  <div className="bg-yellow-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Données techniques</h3>
                     <ul className="space-y-2 text-slate-600 font-architecture">
                       <li>• Adresse IP</li>
@@ -69,21 +69,21 @@ export default function PolitiqueConfidentialite() {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-[#7384bc] rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-aximotravo-red rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-semibold text-slate-900 font-architecture">Gestion des demandes</h4>
                       <p className="text-slate-600 font-architecture">Traitement de vos demandes d'estimation, de contact et de renseignements</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-[#fd733f] rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-aximotravo-blue rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-semibold text-slate-900 font-architecture">Communication commerciale</h4>
                       <p className="text-slate-600 font-architecture">Envoi d'informations sur nos services (avec votre consentement)</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-aximotravo-yellow rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-semibold text-slate-900 font-architecture">Amélioration du service</h4>
                       <p className="text-slate-600 font-architecture">Analyse statistique pour améliorer notre site et nos services</p>
@@ -106,7 +106,7 @@ export default function PolitiqueConfidentialite() {
 
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">5. Durée de conservation</h2>
-                <div className="bg-orange-50 p-6 rounded-xl">
+                <div className="bg-red-50 p-6 rounded-xl">
                   <p className="text-slate-600 font-architecture mb-4">
                     Nous conservons vos données personnelles pendant les durées suivantes :
                   </p>
@@ -161,10 +161,10 @@ export default function PolitiqueConfidentialite() {
                 <p className="text-slate-600 font-architecture mb-4">
                   Notre site utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez gérer vos préférences de cookies à tout moment.
                 </p>
-                <div className="bg-purple-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-6 rounded-xl">
                   <p className="text-slate-600 font-architecture">
-                    Pour plus d'informations sur notre utilisation des cookies, consultez notre 
-                    <a href="/cookies" className="text-[#7384bc] hover:underline ml-1">politique de cookies</a>.
+                    Pour plus d'informations sur notre utilisation des cookies, consultez notre
+                    <a href="/cookies" className="text-aximotravo-blue hover:underline ml-1">politique de cookies</a>.
                   </p>
                 </div>
               </section>
@@ -174,7 +174,7 @@ export default function PolitiqueConfidentialite() {
                 <p className="text-slate-600 font-architecture mb-4">
                   Pour exercer vos droits ou pour toute question concernant cette politique :
                 </p>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-yellow-50 p-6 rounded-xl">
                   <p className="font-architecture mb-2"><strong>Email :</strong> contact@olivierdang.fr</p>
                   <p className="font-architecture mb-2"><strong>Courrier :</strong> 123 Avenue des Champs-Élysées, 75008 Paris</p>
                   <p className="font-architecture mb-4"><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
@@ -187,7 +187,7 @@ export default function PolitiqueConfidentialite() {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">10. Modifications</h2>
                 <p className="text-slate-600 font-architecture">
-                  Cette politique de confidentialité peut être modifiée à tout moment. La version en vigueur est celle publiée sur notre site web. 
+                  Cette politique de confidentialité peut être modifiée à tout moment. La version en vigueur est celle publiée sur notre site web.
                   Dernière mise à jour : Janvier 2024.
                 </p>
               </section>
@@ -195,7 +195,7 @@ export default function PolitiqueConfidentialite() {
           </div>
         </div>
       </section>
-
+      
       <Footer />
     </main>
   );

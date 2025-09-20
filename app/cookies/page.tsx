@@ -16,7 +16,7 @@ export default function Cookies() {
           <div className="mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight font-architecture mb-6">
               <span className="text-slate-900">Politique des</span>{' '}
-              <span className="text-[#7384bc]">cookies</span>
+              <span className="text-aximotravo-blue">cookies</span>
             </h1>
             <p className="text-lg text-slate-600 font-architecture">
               Comment nous utilisons les cookies pour améliorer votre expérience sur notre site
@@ -40,7 +40,7 @@ export default function Cookies() {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">2. Types de cookies utilisés</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-green-50 p-6 rounded-xl">
+                  <div className="bg-red-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Cookies essentiels</h3>
                     <p className="text-slate-600 font-architecture mb-3">
                       Nécessaires au fonctionnement du site. Ils ne peuvent pas être désactivés.
@@ -51,7 +51,7 @@ export default function Cookies() {
                       <li>• Préférences de langue</li>
                     </ul>
                   </div>
-                  <div className="bg-orange-50 p-6 rounded-xl">
+                  <div className="bg-blue-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Cookies analytiques</h3>
                     <p className="text-slate-600 font-architecture mb-3">
                       Nous aident à comprendre comment vous utilisez notre site.
@@ -62,7 +62,7 @@ export default function Cookies() {
                       <li>• Amélioration du site</li>
                     </ul>
                   </div>
-                  <div className="bg-purple-50 p-6 rounded-xl">
+                  <div className="bg-yellow-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Cookies fonctionnels</h3>
                     <p className="text-slate-600 font-architecture mb-3">
                       Améliorent votre expérience de navigation.
@@ -94,7 +94,7 @@ export default function Cookies() {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
-                    <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-aximotravo-red rounded-xl flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm font-architecture">G</span>
                     </div>
                     <div>
@@ -105,7 +105,7 @@ export default function Cookies() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
-                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-aximotravo-blue rounded-xl flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm font-architecture">F</span>
                     </div>
                     <div>
@@ -116,7 +116,7 @@ export default function Cookies() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
-                    <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-aximotravo-yellow rounded-xl flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm font-architecture">C</span>
                     </div>
                     <div>
@@ -131,16 +131,15 @@ export default function Cookies() {
 
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">4. Gestion de vos préférences</h2>
-                <div className="bg-teal-50 p-6 rounded-xl mb-6">
+                <div className="bg-yellow-50 p-6 rounded-xl mb-6">
                   <h3 className="font-bold text-slate-900 mb-3 font-architecture">Centre de préférences</h3>
                   <p className="text-slate-600 font-architecture mb-4">
                     Vous pouvez à tout moment modifier vos préférences concernant les cookies via notre centre de préférences.
                   </p>
-                  <button className="px-6 py-3 bg-teal-500 text-white rounded-xl hover:bg-teal-600 transition-colors font-architecture">
+                  <button className="px-6 py-3 bg-aximotravo-yellow text-white rounded-xl hover:bg-aximotravo-yellow-dark transition-colors font-architecture">
                     Gérer mes préférences
                   </button>
                 </div>
-
                 <h3 className="font-bold text-slate-900 mb-3 font-architecture">Paramètres du navigateur</h3>
                 <p className="text-slate-600 font-architecture mb-4">
                   Vous pouvez également configurer votre navigateur pour :
@@ -267,7 +266,7 @@ export default function Cookies() {
           </div>
         </div>
       </section>
-
+      
       <Footer />
     </main>
   );

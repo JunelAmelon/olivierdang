@@ -16,7 +16,7 @@ export default function MentionsLegales() {
           <div className="mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight font-architecture mb-6">
               <span className="text-slate-900">Mentions</span>{' '}
-              <span className="text-[#7384bc]">légales</span>
+              <span className="text-aximotravo-blue">légales</span>
             </h1>
             <p className="text-lg text-slate-600 font-architecture">
               Informations légales concernant le site web d'Olivier DANG
@@ -116,7 +116,7 @@ export default function MentionsLegales() {
           </div>
         </div>
       </section>
-
+      
       <Footer />
     </main>
   );

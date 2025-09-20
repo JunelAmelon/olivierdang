@@ -16,7 +16,6 @@ export default function Contact() {
     consent: false,
     services: [] as string[]
   });
-  
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (field: string, value: any) => {
@@ -51,10 +50,8 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulation d'envoi
     setIsSubmitted(true);
-    resetForm(); // Réinitialise immédiatement le formulaire
-    // Masque le message de confirmation après 10 secondes
+    resetForm();
     setTimeout(() => setIsSubmitted(false), 10000);
   };
 
@@ -66,17 +63,15 @@ export default function Contact() {
       <section className="bg-white py-12 sm:py-16 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-[#7384bc]/10 to-blue-50 rounded-full mb-6 sm:mb-8">
-              <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-[#7384bc] mr-2" />
-              <span className="text-[#7384bc] font-semibold font-architecture text-sm sm:text-base">Parlons de votre projet</span>
+            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-aximotravo-red/10 to-aximotravo-blue/10 rounded-full mb-6 sm:mb-8">
+              <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-aximotravo-red mr-2" />
+              <span className="text-aximotravo-blue font-semibold font-architecture text-sm sm:text-base">Parlons de votre projet</span>
             </div>
-            
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight font-architecture mb-6 sm:mb-8">
               <span className="text-slate-900">Transformons votre</span><br />
-              <span className="bg-gradient-to-r from-[#7384bc] to-blue-600 bg-clip-text text-transparent">projet immobilier</span><br />
+              <span className="bg-gradient-to-r from-aximotravo-red to-aximotravo-blue bg-clip-text text-transparent">projet immobilier</span><br />
               <span className="text-slate-900">en réussite</span>
             </h1>
-            
             <p className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto font-architecture px-4">
               Une question ? Un projet de vente ? Notre équipe d'experts vous accompagne pour maximiser
               la valeur de votre bien et accélérer sa vente.
@@ -90,9 +85,8 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
             <div className="grid lg:grid-cols-5">
-              
-              {/* Sidebar violet - Responsive */}
-              <div className="lg:col-span-2 bg-gradient-to-br from-[#7384bc] to-[#5a6ba8] p-6 sm:p-8 lg:p-12 text-white relative overflow-hidden">
+              {/* Sidebar - Responsive */}
+              <div className="lg:col-span-2 bg-gradient-to-br from-aximotravo-red to-aximotravo-blue p-6 sm:p-8 lg:p-12 text-white relative overflow-hidden">
                 {/* Motifs décoratifs */}
                 <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 bg-white/10 rounded-full -translate-y-12 translate-x-12 sm:-translate-y-16 sm:translate-x-16"></div>
                 <div className="absolute bottom-0 left-0 w-20 h-20 sm:w-24 sm:h-24 bg-white/10 rounded-full translate-y-10 -translate-x-10 sm:translate-y-12 sm:-translate-x-12"></div>
@@ -102,12 +96,12 @@ export default function Contact() {
                     <h2 className="text-2xl sm:text-3xl font-bold font-architecture">
                       Prenons contact
                     </h2>
-                    <p className="text-blue-100 font-architecture leading-relaxed text-sm sm:text-base">
+                    <p className="text-red-100 font-architecture leading-relaxed text-sm sm:text-base">
                       Notre équipe d'experts vous accompagne dans votre projet immobilier.
                       Contactez-nous pour une consultation personnalisée.
                     </p>
                   </div>
-                  
+
                   <div className="space-y-4 sm:space-y-6">
                     {/* Chat */}
                     <div className="flex items-start space-x-3 sm:space-x-4">
@@ -116,7 +110,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-bold text-white mb-1 font-architecture text-sm sm:text-base">Chat en direct</h3>
-                        <p className="text-blue-100 text-xs sm:text-sm font-architecture">
+                        <p className="text-red-100 text-xs sm:text-sm font-architecture">
                           Notre équipe est là pour vous aider
                         </p>
                         <p className="text-white/80 text-xs sm:text-sm font-architecture mt-1">
@@ -124,7 +118,7 @@ export default function Contact() {
                         </p>
                       </div>
                     </div>
-                    
+
                     {/* Bureau */}
                     <div className="flex items-start space-x-3 sm:space-x-4">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -132,7 +126,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-bold text-white mb-1 font-architecture text-sm sm:text-base">Bureau</h3>
-                        <p className="text-blue-100 text-xs sm:text-sm font-architecture">
+                        <p className="text-red-100 text-xs sm:text-sm font-architecture">
                           Venez nous rendre visite à notre bureau
                         </p>
                         <p className="text-white/80 text-xs sm:text-sm font-architecture mt-1">
@@ -141,7 +135,7 @@ export default function Contact() {
                         </p>
                       </div>
                     </div>
-                    
+
                     {/* Téléphone */}
                     <div className="flex items-start space-x-3 sm:space-x-4">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -149,7 +143,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-bold text-white mb-1 font-architecture text-sm sm:text-base">Téléphone</h3>
-                        <p className="text-blue-100 text-xs sm:text-sm font-architecture">
+                        <p className="text-red-100 text-xs sm:text-sm font-architecture">
                           Du lundi au vendredi de 9h à 19h
                         </p>
                         <p className="text-white/80 text-xs sm:text-sm font-architecture mt-1">
@@ -158,7 +152,7 @@ export default function Contact() {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Réseaux sociaux */}
                   <div className="pt-6 sm:pt-8 border-t border-white/20">
                     <div className="flex space-x-3 sm:space-x-4">
@@ -174,7 +168,6 @@ export default function Contact() {
                           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                         </svg>
                       </a>
-                      
                       {/* LinkedIn */}
                       <a
                         href="https://linkedin.com/in/olivier-dang-immobilier"
@@ -187,7 +180,6 @@ export default function Contact() {
                           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
                       </a>
-                      
                       {/* Instagram */}
                       <a
                         href="https://instagram.com/olivier.dang.immobilier"
@@ -216,7 +208,7 @@ export default function Contact() {
                     </h2>
                     <p className="text-slate-600 font-architecture text-sm sm:text-base">
                       Vous pouvez nous joindre à tout moment sur{' '}
-                      <a href="mailto:contact@olivierdang.fr" className="text-[#7384bc] hover:underline">
+                      <a href="mailto:contact@olivierdang.fr" className="text-aximotravo-red hover:underline">
                         contact@olivierdang.fr
                       </a>
                     </p>
@@ -224,8 +216,8 @@ export default function Contact() {
 
                   {isSubmitted ? (
                     <div className="text-center py-8 sm:py-12">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                        <CheckCircle className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-aximotravo-blue/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                        <CheckCircle className="w-8 h-8 sm:w-10 sm:h-10 text-aximotravo-blue" />
                       </div>
                       <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4 font-architecture">
                         Message envoyé avec succès !
@@ -235,7 +227,7 @@ export default function Contact() {
                       </p>
                       <button
                         onClick={() => setIsSubmitted(false)}
-                        className="px-4 sm:px-6 py-2 sm:py-3 bg-[#7384bc] text-white rounded-xl hover:bg-[#5a6ba8] transition-colors font-architecture text-sm sm:text-base"
+                        className="px-4 sm:px-6 py-2 sm:py-3 bg-aximotravo-red text-white rounded-xl hover:bg-aximotravo-red-dark transition-colors font-architecture text-sm sm:text-base"
                       >
                         Envoyer un autre message
                       </button>
@@ -251,7 +243,7 @@ export default function Contact() {
                           type="text"
                           value={formData.firstName}
                           onChange={(e) => handleInputChange('firstName', e.target.value)}
-                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#7384bc] focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
+                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-aximotravo-red focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
                           placeholder="Votre nom"
                           required
                         />
@@ -266,7 +258,7 @@ export default function Contact() {
                           type="email"
                           value={formData.email}
                           onChange={(e) => handleInputChange('email', e.target.value)}
-                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#7384bc] focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
+                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-aximotravo-red focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
                           placeholder="votre@email.com"
                           required
                         />
@@ -278,14 +270,14 @@ export default function Contact() {
                           Numéro de téléphone
                         </label>
                         <div className="flex">
-                          <select className="px-2 sm:px-3 py-2 sm:py-3 border border-gray-200 rounded-l-xl focus:ring-2 focus:ring-[#7384bc] focus:border-transparent bg-gray-50 font-architecture text-sm sm:text-base">
+                          <select className="px-2 sm:px-3 py-2 sm:py-3 border border-gray-200 rounded-l-xl focus:ring-2 focus:ring-aximotravo-red focus:border-transparent bg-gray-50 font-architecture text-sm sm:text-base">
                             <option>FR</option>
                           </select>
                           <input
                             type="tel"
                             value={formData.phone}
                             onChange={(e) => handleInputChange('phone', e.target.value)}
-                            className="flex-1 px-3 sm:px-4 py-2 sm:py-3 border border-l-0 border-gray-200 rounded-r-xl focus:ring-2 focus:ring-[#7384bc] focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
+                            className="flex-1 px-3 sm:px-4 py-2 sm:py-3 border border-l-0 border-gray-200 rounded-r-xl focus:ring-2 focus:ring-aximotravo-red focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
                             placeholder="+1 (555) 000-0000"
                           />
                         </div>
@@ -300,7 +292,7 @@ export default function Contact() {
                           type="text"
                           value={formData.address}
                           onChange={(e) => handleInputChange('address', e.target.value)}
-                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#7384bc] focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
+                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-aximotravo-red focus:border-transparent transition-all duration-200 font-architecture placeholder-gray-400 text-sm sm:text-base"
                           placeholder="123 Rue de la Paix, 75001 Paris"
                         />
                       </div>
@@ -314,7 +306,7 @@ export default function Contact() {
                           rows={4}
                           value={formData.message}
                           onChange={(e) => handleInputChange('message', e.target.value)}
-                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#7384bc] focus:border-transparent transition-all duration-200 font-architecture resize-none placeholder-gray-400 text-sm sm:text-base"
+                          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-aximotravo-red focus:border-transparent transition-all duration-200 font-architecture resize-none placeholder-gray-400 text-sm sm:text-base"
                           placeholder="Parlez-nous un peu de votre projet..."
                           required
                         />
@@ -337,7 +329,7 @@ export default function Contact() {
                                 type="checkbox"
                                 checked={formData.services.includes(service)}
                                 onChange={(e) => handleServiceChange(service, e.target.checked)}
-                                className="w-4 h-4 text-[#7384bc] rounded focus:ring-[#7384bc] border-gray-300"
+                                className="w-4 h-4 text-aximotravo-red rounded focus:ring-aximotravo-red border-gray-300"
                               />
                               <span className="ml-2 text-sm text-slate-600 font-architecture">{service}</span>
                             </label>
@@ -348,7 +340,7 @@ export default function Contact() {
                       {/* Bouton submit - Responsive */}
                       <button
                         type="submit"
-                        className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-[#7384bc] text-white font-bold rounded-xl transition-all duration-300 hover:bg-[#5a6ba8] hover:shadow-lg transform hover:-translate-y-0.5 font-architecture flex items-center justify-center space-x-2 text-sm sm:text-base"
+                        className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-aximotravo-red to-aximotravo-blue text-white font-bold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-aximotravo-red/25 transform hover:-translate-y-0.5 font-architecture flex items-center justify-center space-x-2 text-sm sm:text-base"
                       >
                         <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                         <span>Envoyer le message</span>
@@ -373,7 +365,6 @@ export default function Contact() {
               Notre bureau est situé au cœur de Paris, facilement accessible
             </p>
           </div>
-          
           <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2739080260937!2d2.3016005156743896!3d48.87240097928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8d%3A0x40b82c3688c9460!2sAv.%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2sfr!4v1642678901234!5m2!1sen!2sfr"
@@ -385,11 +376,10 @@ export default function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full sm:h-[500px]"
             ></iframe>
-            
             {/* Overlay - Responsive */}
             <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl max-w-xs sm:max-w-sm">
               <div className="flex items-start space-x-3 sm:space-x-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7384bc] rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-aximotravo-red rounded-xl flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
@@ -400,7 +390,7 @@ export default function Contact() {
                   </p>
                   <div className="flex items-center space-x-3 sm:space-x-4 text-xs text-slate-500">
                     <span className="flex items-center">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
+                      <div className="w-2 h-2 bg-aximotravo-blue rounded-full mr-1"></div>
                       Ouvert
                     </span>
                     <span>Métro: George V</span>

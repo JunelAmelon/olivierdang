@@ -1,5 +1,4 @@
 'use client';
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SalesShowcaseSection from '@/components/SalesShowcaseSection';
@@ -23,12 +22,11 @@ export default function APropos() {
             const duration = 2000;
             const steps = 60;
             const interval = duration / steps;
-            
             let step = 0;
+            
             const timer = setInterval(() => {
               step++;
               const progress = step / steps;
-              
               setAnimatedStats({
                 sales: Math.round(65 * progress),
                 satisfaction: Math.round(99 * progress),
@@ -47,7 +45,6 @@ export default function APropos() {
               }
             }, interval);
           };
-          
           animateStats();
         }
       },
@@ -56,26 +53,25 @@ export default function APropos() {
 
     const statsElement = document.querySelector('.stats-numbers');
     if (statsElement) observer.observe(statsElement);
-
     return () => observer.disconnect();
   }, []);
 
   return (
     <main className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full">
-                  <span className="text-[#7384bc] font-semibold text-sm font-architecture"> Notre histoire</span>
+                <div className="inline-flex items-center px-4 py-2 bg-red-50 rounded-full">
+                  <span className="text-aximotravo-red font-semibold text-sm font-architecture">Notre histoire</span>
                 </div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight font-architecture">
                   <span className="text-slate-900">À propos</span><br />
-                  <span className="text-[#7384bc]">d'Olivier DANG</span>
+                  <span className="text-aximotravo-red">d'Olivier DANG</span>
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed font-architecture mb-6">
                   Depuis plus de 10 ans, je transforme l'expérience de vente immobilière grâce à une approche unique alliant expertise immobilière et valorisation des biens.
@@ -103,7 +99,7 @@ export default function APropos() {
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold leading-tight font-architecture mb-6">
               <span className="text-slate-900">Mon</span>{' '}
-              <span className="text-[#7384bc]">parcours</span>
+              <span className="text-aximotravo-red">parcours</span>
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto font-architecture">
               Une expertise construite au fil des années pour vous offrir le meilleur service immobilier.
@@ -111,7 +107,7 @@ export default function APropos() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-12 h-12 bg-[#7384bc] rounded-xl flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-aximotravo-red rounded-xl flex items-center justify-center mb-6">
                 <Award className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4 font-architecture">Formation d'excellence</h3>
@@ -119,8 +115,9 @@ export default function APropos() {
                 Diplômé en immobilier et formé aux techniques de valorisation, j'ai acquis une double compétence unique sur le marché.
               </p>
             </div>
+
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-12 h-12 bg-[#fd733f] rounded-xl flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-aximotravo-blue rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4 font-architecture">10+ années d'expérience</h3>
@@ -128,8 +125,9 @@ export default function APropos() {
                 Plus de 65 ventes réussies et des milliers de clients satisfaits. Une expertise reconnue dans la région parisienne.
               </p>
             </div>
+
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-aximotravo-yellow rounded-xl flex items-center justify-center mb-6">
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4 font-architecture">Innovation constante</h3>
@@ -149,15 +147,16 @@ export default function APropos() {
               <div className="space-y-6">
                 <h2 className="text-4xl sm:text-5xl font-bold leading-tight font-architecture">
                   <span className="text-slate-900">Mes</span>{' '}
-                  <span className="text-[#7384bc]">valeurs</span>
+                  <span className="text-aximotravo-blue">valeurs</span>
                 </h2>
                 <p className="text-lg text-slate-600 leading-relaxed font-architecture">
                   Chaque vente est unique, chaque client mérite une attention particulière. Voici les principes qui guident mon travail au quotidien.
                 </p>
               </div>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 group hover:transform hover:translate-x-2 transition-all duration-300">
-                  <div className="flex-shrink-0 w-6 h-6 bg-[#7384bc] rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform">
+                  <div className="flex-shrink-0 w-6 h-6 bg-aximotravo-red rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform">
                     <Check className="w-4 h-4 text-white" />
                   </div>
                   <div>
@@ -167,8 +166,9 @@ export default function APropos() {
                     </p>
                   </div>
                 </div>
+
                 <div className="flex items-start space-x-4 group hover:transform hover:translate-x-2 transition-all duration-300">
-                  <div className="flex-shrink-0 w-6 h-6 bg-[#fd733f] rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform">
+                  <div className="flex-shrink-0 w-6 h-6 bg-aximotravo-blue rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform">
                     <Shield className="w-4 h-4 text-white" />
                   </div>
                   <div>
@@ -178,8 +178,9 @@ export default function APropos() {
                     </p>
                   </div>
                 </div>
+
                 <div className="flex items-start space-x-4 group hover:transform hover:translate-x-2 transition-all duration-300">
-                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform">
+                  <div className="flex-shrink-0 w-6 h-6 bg-aximotravo-yellow rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform">
                     <Heart className="w-4 h-4 text-white" />
                   </div>
                   <div>
@@ -206,7 +207,7 @@ export default function APropos() {
       <SalesShowcaseSection />
 
       {/* Statistiques animées */}
-      <section className="bg-gradient-to-br from-[#7384bc] to-blue-600 py-16 lg:py-24 text-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-aximotravo-red to-aximotravo-blue py-16 lg:py-24 text-white relative overflow-hidden">
         {/* Éléments décoratifs */}
         <div className="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>

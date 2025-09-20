@@ -16,7 +16,7 @@ export default function ConditionsGenerales() {
           <div className="mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight font-architecture mb-6">
               <span className="text-slate-900">Conditions</span>{' '}
-              <span className="text-[#7384bc]">générales</span>
+              <span className="text-aximotravo-red">générales</span>
             </h1>
             <p className="text-lg text-slate-600 font-architecture">
               Conditions générales d'utilisation et de vente des services d'Olivier DANG
@@ -30,7 +30,7 @@ export default function ConditionsGenerales() {
                 <p className="text-slate-600 font-architecture mb-4">
                   Les présentes conditions générales ont pour objet de définir les modalités et conditions d'utilisation des services proposés sur le site, ainsi que de définir les droits et obligations des parties dans ce cadre.
                 </p>
-                <div className="bg-blue-50 p-6 rounded-xl">
+                <div className="bg-red-50 p-6 rounded-xl">
                   <p className="text-slate-600 font-architecture">
                     <strong>Services proposés :</strong> Estimation immobilière, vente immobilière, travaux de valorisation, conseil en immobilier, accompagnement personnalisé.
                   </p>
@@ -50,7 +50,7 @@ export default function ConditionsGenerales() {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">3. Services proposés</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-gray-50 p-6 rounded-xl">
+                  <div className="bg-blue-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Services gratuits</h3>
                     <ul className="space-y-2 text-slate-600 font-architecture">
                       <li>• Estimation immobilière en ligne</li>
@@ -59,7 +59,7 @@ export default function ConditionsGenerales() {
                       <li>• Visite d'évaluation</li>
                     </ul>
                   </div>
-                  <div className="bg-gray-50 p-6 rounded-xl">
+                  <div className="bg-yellow-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Services payants</h3>
                     <ul className="space-y-2 text-slate-600 font-architecture">
                       <li>• Mandat de vente exclusif</li>
@@ -75,21 +75,21 @@ export default function ConditionsGenerales() {
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">4. Modalités de commande</h2>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-[#7384bc] text-white rounded-full flex items-center justify-center text-sm font-bold font-architecture flex-shrink-0">1</div>
+                    <div className="w-8 h-8 bg-aximotravo-red text-white rounded-full flex items-center justify-center text-sm font-bold font-architecture flex-shrink-0">1</div>
                     <div>
                       <h4 className="font-semibold text-slate-900 font-architecture">Prise de contact</h4>
                       <p className="text-slate-600 font-architecture">Contact initial par téléphone, email ou formulaire en ligne</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-[#fd733f] text-white rounded-full flex items-center justify-center text-sm font-bold font-architecture flex-shrink-0">2</div>
+                    <div className="w-8 h-8 bg-aximotravo-blue text-white rounded-full flex items-center justify-center text-sm font-bold font-architecture flex-shrink-0">2</div>
                     <div>
                       <h4 className="font-semibold text-slate-900 font-architecture">Évaluation gratuite</h4>
                       <p className="text-slate-600 font-architecture">Visite du bien et établissement d'un devis personnalisé</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold font-architecture flex-shrink-0">3</div>
+                    <div className="w-8 h-8 bg-aximotravo-yellow text-white rounded-full flex items-center justify-center text-sm font-bold font-architecture flex-shrink-0">3</div>
                     <div>
                       <h4 className="font-semibold text-slate-900 font-architecture">Signature du mandat</h4>
                       <p className="text-slate-600 font-architecture">Signature du contrat de prestation après acceptation du devis</p>
@@ -100,7 +100,7 @@ export default function ConditionsGenerales() {
 
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">5. Prix et paiement</h2>
-                <div className="bg-orange-50 p-6 rounded-xl mb-4">
+                <div className="bg-red-50 p-6 rounded-xl mb-4">
                   <h3 className="font-bold text-slate-900 mb-3 font-architecture">Tarification</h3>
                   <ul className="space-y-2 text-slate-600 font-architecture">
                     <li>• <strong>Commission de vente :</strong> Pourcentage du prix de vente (selon barème en vigueur)</li>
@@ -121,7 +121,7 @@ export default function ConditionsGenerales() {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">6. Obligations des parties</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-gray-50 p-6 rounded-xl">
+                  <div className="bg-blue-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Nos engagements</h3>
                     <ul className="space-y-2 text-slate-600 font-architecture">
                       <li>• Mise en œuvre de tous les moyens pour la vente</li>
@@ -130,7 +130,7 @@ export default function ConditionsGenerales() {
                       <li>• Confidentialité des informations</li>
                     </ul>
                   </div>
-                  <div className="bg-gray-50 p-6 rounded-xl">
+                  <div className="bg-yellow-50 p-6 rounded-xl">
                     <h3 className="font-bold text-slate-900 mb-3 font-architecture">Vos engagements</h3>
                     <ul className="space-y-2 text-slate-600 font-architecture">
                       <li>• Fourniture d'informations exactes</li>
@@ -144,7 +144,7 @@ export default function ConditionsGenerales() {
 
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">7. Droit de rétractation</h2>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-6 rounded-xl">
                   <p className="text-slate-600 font-architecture mb-4">
                     Conformément au Code de la consommation, vous disposez d'un délai de <strong>14 jours</strong> pour exercer votre droit de rétractation à compter de la signature du contrat.
                   </p>
@@ -187,7 +187,7 @@ export default function ConditionsGenerales() {
 
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 font-architecture">10. Réclamations et litiges</h2>
-                <div className="bg-purple-50 p-6 rounded-xl">
+                <div className="bg-red-50 p-6 rounded-xl">
                   <p className="text-slate-600 font-architecture mb-4">
                     <strong>Médiation :</strong> En cas de litige, nous nous engageons à rechercher une solution amiable. À défaut, vous pouvez recourir à la médiation de la consommation.
                   </p>
@@ -221,7 +221,7 @@ export default function ConditionsGenerales() {
           </div>
         </div>
       </section>
-
+      
       <Footer />
     </main>
   );
